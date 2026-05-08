@@ -35,6 +35,11 @@ nav h1 {
     font-size: 1.5rem;
 }
 
+nav h1 a {
+    color: white;
+    text-decoration: none;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
