@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gun Club - Members Area</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Gun Club</h1>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#leagues">Leagues</a></li>
+                    <li><a href="index.html#ranges">Ranges</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="members.html">Members Area</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="container">
+                <h2>Members Login</h2>
+                <p>Access exclusive member content by logging in.</p>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+                    <button type="submit">Login</button>
+                </form>
+                <p><em>Note: This is a prototype. Authentication not implemented yet.</em></p>
+            </div>
+        </section>
+
+        <section class="member-info">
+            <div class="container">
+                <h2>Member Information</h2>
+                <div class="info-item">
+                    <h3>Upcoming Dinners</h3>
+                    <p>Join us for our monthly member dinners. Next one: June 15th at 7 PM.</p>
+                    <img src="https://placehold.co/600x400?text=Dinner+Event" alt="Dinner Event">
+                </div>
+                <div class="info-item">
+                    <h3>Exclusive Events</h3>
+                    <p>Members-only shooting competitions and workshops.</p>
+                    <img src="https://placehold.co/600x400?text=Exclusive+Event" alt="Exclusive Event">
+                </div>
+                <div class="info-item">
+                    <h3>Member Benefits</h3>
+                    <p>Discounted range fees, priority booking, and more.</p>
+                    <img src="https://placehold.co/600x400?text=Member+Benefits" alt="Member Benefits">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Gun Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
