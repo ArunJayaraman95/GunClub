@@ -289,21 +289,59 @@ nav ul li a:hover {
 .events {
     background-color: #2f4f4f;
     padding: 2rem 0;
-    text-align: center;
     color: white;
 }
 
+.events .container {
+    max-width: 1200px;
+}
+
 .events h2 {
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #dc143c;
 }
 
-.events ul {
-    list-style: none;
-    padding: 0;
+.event-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.events li {
+.event-card img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details h3 {
     margin-bottom: 0.5rem;
+    color: #dc143c;
+}
+
+.event-details p {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.event-details ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1rem;
+    color: #ffffff;
+}
+
+.event-details li {
+    margin-bottom: 0.25rem;
 }
 
 /* Contact Section */
@@ -529,5 +567,16 @@ footer {
 
     .range-text {
         padding: 10px 0;
+    }
+
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-card img {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
     }
 }
