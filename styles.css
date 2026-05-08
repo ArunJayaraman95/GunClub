@@ -75,8 +75,8 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: #2f4f4f;
-    padding: 2rem 0;
+    overflow: hidden;
+    padding: 0;
     text-align: center;
     color: white;
 }
@@ -96,9 +96,19 @@ nav ul li a:hover {
 }
 
 .hero-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
+    display: block;
+    width: 100vw;
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 80vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        height: 280px;
+    }
 }
 
 /* About Section */
@@ -218,8 +228,11 @@ nav ul li a:hover {
 
 .ranges h2 {
     text-align: center;
-    margin-bottom: 2rem;
     color: #dc143c;
+}
+
+.range-subtitle {
+    margin-bottom: 2rem;
 }
 
 .range-item {
@@ -234,8 +247,8 @@ nav ul li a:hover {
 }
 
 .range-item img {
-    width: 50%;
-    height: auto;
+    width: 600px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -251,6 +264,18 @@ nav ul li a:hover {
 
 .range-text p {
     color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.hours-list {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1rem;
+    color: #ffffff;
+}
+
+.hours-list li {
+    margin-bottom: 0.25rem;
 }
 
 /* Events Section */
