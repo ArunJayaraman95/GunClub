@@ -1,3 +1,16 @@
+/* CSS Variables for Theme Colors */
+:root {
+    --color-primary: #dc143c;
+    --color-dark-bg: #1a1a1a;
+    --color-secondary-bg: #2f4f4f;
+    --color-text-light: #ffffff;
+    --color-text-dark: #333333;
+    --color-border: #555;
+    --color-border-light: #ccc;
+    --color-dark: #000;
+    --color-dark-hover: #b22222;
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -8,8 +21,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #ffffff;
-    background-color: #1a1a1a;
+    color: var(--color-text-light);
+    background-color: var(--color-dark-bg);
 }
 
 .container {
@@ -20,8 +33,8 @@ body {
 
 /* Header and Navigation */
 header {
-    background-color: #2f4f4f;
-    color: white;
+    background-color: var(--color-secondary-bg);
+    color: var(--color-text-light);
     padding: 1rem 0;
 }
 
@@ -36,7 +49,7 @@ nav h1 {
 }
 
 nav h1 a {
-    color: white;
+    color: var(--color-text-light);
     text-decoration: none;
 }
 
@@ -52,7 +65,7 @@ nav h1 a {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--color-text-light);
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -67,7 +80,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--color-text-light);
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s;
@@ -75,7 +88,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #dc143c;
+    background-color: var(--color-primary);
 }
 
 /* Hero Section */
@@ -83,7 +96,7 @@ nav ul li a:hover {
     overflow: hidden;
     padding: 0;
     text-align: center;
-    color: white;
+    color: var(--color-text-light);
 }
 
 .hero h2 {
@@ -120,12 +133,12 @@ nav ul li a:hover {
 .about {
     padding: 2rem 0;
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: var(--color-dark-bg);
 }
 
 .about h2 {
     margin-bottom: 1rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .about p {
@@ -154,7 +167,7 @@ nav ul li a:hover {
 .location h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .location-row {
@@ -172,7 +185,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #ffffff;
+    color: var(--color-text-light);
     padding: 20px;
 }
 
@@ -191,7 +204,7 @@ nav ul li a:hover {
     height: 320px;
     border-radius: 8px;
     overflow: hidden;
-    background-color: #000;
+    background-color: var(--color-dark);
 }
 
 .location-map iframe {
@@ -209,10 +222,10 @@ nav ul li a:hover {
 
 /* Leagues Section */
 .leagues {
-    background-color: #2f4f4f;
+    background-color: var(--color-secondary-bg);
     padding: 2rem 0;
     text-align: center;
-    color: white;
+    color: var(--color-text-light);
 }
 
 .leagues h2 {
@@ -231,7 +244,7 @@ nav ul li a:hover {
 /* Ranges Section */
 .ranges {
     padding: 2rem 0;
-    background-color: #1a1a1a;
+    background-color: var(--color-dark-bg);
 }
 
 .ranges .container {
@@ -240,7 +253,7 @@ nav ul li a:hover {
 
 .ranges h2 {
     text-align: center;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .range-subtitle {
@@ -271,11 +284,11 @@ nav ul li a:hover {
 
 .range-text h3 {
     margin-bottom: 0.5rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .range-text p {
-    color: #ffffff;
+    color: var(--color-text-light);
     margin-bottom: 0.75rem;
 }
 
@@ -283,7 +296,7 @@ nav ul li a:hover {
     list-style: disc inside;
     margin: 0;
     padding-left: 1rem;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
 .hours-list li {
@@ -292,9 +305,9 @@ nav ul li a:hover {
 
 /* Events Section */
 .events {
-    background-color: #2f4f4f;
+    background-color: var(--color-secondary-bg);
     padding: 2rem 0;
-    color: white;
+    color: var(--color-text-light);
 }
 
 .events .container {
@@ -304,7 +317,7 @@ nav ul li a:hover {
 .events h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .event-card {
@@ -312,7 +325,7 @@ nav ul li a:hover {
     align-items: center;
     margin-bottom: 2rem;
     gap: 20px;
-    background-color: #1a1a1a;
+    background-color: var(--color-dark-bg);
     padding: 20px;
     border-radius: 8px;
 }
@@ -330,19 +343,19 @@ nav ul li a:hover {
 
 .event-details h3 {
     margin-bottom: 0.5rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .event-details p {
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
 .event-details ul {
     list-style: disc inside;
     margin: 0;
     padding-left: 1rem;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
 .event-details li {
@@ -352,7 +365,7 @@ nav ul li a:hover {
 /* Contact Section */
 .contact {
     padding: 2rem 0;
-    background-color: #1a1a1a;
+    background-color: var(--color-dark-bg);
 }
 
 .contact .container {
@@ -362,36 +375,36 @@ nav ul li a:hover {
 .contact h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .contact-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #2f4f4f;
-    color: #ffffff;
+    background-color: var(--color-secondary-bg);
+    color: var(--color-text-light);
     margin-bottom: 2rem;
 }
 
 .contact-table th, .contact-table td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .contact-table th {
-    background-color: #dc143c;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
 }
 
 .contact p {
     text-align: center;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
 .contact a {
-    color: #dc143c;
+    color: var(--color-primary);
     text-decoration: none;
 }
 
@@ -401,8 +414,8 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #2f4f4f;
-    color: white;
+    background-color: var(--color-secondary-bg);
+    color: var(--color-text-light);
     text-align: center;
     padding: 1rem 0;
 }
@@ -410,18 +423,18 @@ footer {
 /* Login Section */
 .login {
     padding: 2rem 0;
-    background-color: #1a1a1a;
+    background-color: var(--color-dark-bg);
     text-align: center;
 }
 
 .login h2 {
     margin-bottom: 1rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .login p {
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
 .login form {
@@ -434,39 +447,39 @@ footer {
 
 .login label {
     text-align: left;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
 .login input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border-light);
     border-radius: 4px;
 }
 
 .login button {
     padding: 10px;
-    background-color: #dc143c;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .login button:hover {
-    background-color: #b22222;
+    background-color: var(--color-dark-hover);
 }
 
 /* Calendar Section */
 .calendar-section {
     padding: 2rem 0;
-    background-color: #2f4f4f;
-    color: white;
+    background-color: var(--color-secondary-bg);
+    color: var(--color-text-light);
     text-align: center;
 }
 
 .calendar-section h2 {
     margin-bottom: 1rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .calendar-embed {
@@ -479,7 +492,7 @@ footer {
 /* Member Info Section */
 .member-info {
     padding: 2rem 0;
-    background-color: #2f4f4f;
+    background-color: var(--color-secondary-bg);
 }
 
 .member-info .container {
@@ -489,7 +502,7 @@ footer {
 .member-info h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
 .info-item {
@@ -499,12 +512,12 @@ footer {
 
 .info-item h3 {
     margin-bottom: 0.5rem;
-    color: #dc143c;
+    color: var(--color-primary);
 }
 
 .info-item p {
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
 .info-item img {
@@ -527,7 +540,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #2f4f4f;
+        background-color: var(--color-secondary-bg);
         flex-direction: column;
         display: none;
         padding: 1rem 0;
