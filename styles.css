@@ -525,6 +525,182 @@ footer {
     height: auto;
 }
 
+/* About Us Page */
+.about-page-hero {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: var(--color-secondary-bg);
+}
+
+.about-page-hero h2 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.about-page-hero p {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+}
+
+.about-page-history {
+    padding: 3rem 0;
+    background-color: var(--color-dark-bg);
+}
+
+.about-page-history h2 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.about-page-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.timeline-entry {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.timeline-year {
+    flex-shrink: 0;
+    width: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+    padding-top: 0.25rem;
+    border-right: 3px solid var(--color-primary);
+    padding-right: 1.5rem;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content h3 {
+    color: var(--color-text-light);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.timeline-content p {
+    color: var(--color-text-light);
+    margin-bottom: 0.75rem;
+    opacity: 0.85;
+}
+
+.about-page-mission {
+    padding: 3rem 0;
+    background-color: var(--color-secondary-bg);
+    text-align: center;
+}
+
+.about-page-mission h2 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about-page-lead {
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+.about-page-values {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.value-card {
+    flex: 1;
+    max-width: 320px;
+    background-color: var(--color-dark-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--color-primary);
+    text-align: left;
+}
+
+.value-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.value-card p {
+    color: var(--color-text-light);
+    opacity: 0.85;
+}
+
+.about-page-community {
+    padding: 3rem 0;
+    background-color: var(--color-dark-bg);
+    text-align: center;
+}
+
+.about-page-community h2 {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.about-page-community p {
+    max-width: 750px;
+    margin: 0 auto 1rem;
+    color: var(--color-text-light);
+    opacity: 0.85;
+}
+
+.about-page-cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.about-page-cta:hover {
+    background-color: var(--color-dark-hover);
+}
+
+@media (max-width: 768px) {
+    .timeline-entry {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .timeline-year {
+        width: auto;
+        border-right: none;
+        border-bottom: 3px solid var(--color-primary);
+        padding-right: 0;
+        padding-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .about-page-values {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value-card {
+        max-width: 100%;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav .container {
