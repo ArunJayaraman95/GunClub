@@ -113,18 +113,62 @@ nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
-.hero-image {
-    display: block;
+.slideshow {
+    position: relative;
     width: 100vw;
     max-width: none;
     margin-left: 50%;
     transform: translateX(-50%);
     height: 80vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
+.slideshow-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 0;
+}
+
+.dot.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
 @media (max-width: 768px) {
-    .hero-image {
+    .slideshow {
         height: 280px;
     }
 }
