@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carleton Sportsmen's Club - About Us</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9a24b' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cline x1='12' y1='1' x2='12' y2='5'/%3E%3Cline x1='12' y1='19' x2='12' y2='23'/%3E%3Cline x1='1' y1='12' x2='5' y2='12'/%3E%3Cline x1='19' y1='12' x2='23' y2='12'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="container">
-                <h1><a href="index.html">Carleton Sportsmen's Club</a></h1>
+                <a class="brand" href="index.html">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="1" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="1" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="23" y2="12"/></svg>
+                    <span class="brand-text">Carleton Sportsmen's Club<small>Est. 1962 &middot; Carleton, MI</small></span>
+                </a>
                 <button class="hamburger" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
@@ -23,25 +30,31 @@
                     <li><a href="index.html#contact">Contact</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="members.html">Members Area</a></li>
+                    <li><a href="members.html" class="btn btn--primary">Members Area</a></li>
                 </ul>
             </div>
         </nav>
+        <div class="nav-backdrop"></div>
     </header>
 
     <main>
-        <section class="about-page-hero">
+        <section class="page-hero">
             <div class="container">
+                <span class="eyebrow">About The Club</span>
                 <h2>About Us</h2>
                 <p>Serving our community for over six decades.</p>
             </div>
         </section>
 
-        <section class="about-page-history">
+        <section class="section">
             <div class="container">
-                <h2>Our History</h2>
-                <div class="about-page-timeline">
-                    <div class="timeline-entry">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Since 1962</span>
+                    <h2>Our History</h2>
+                    <div class="rule"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-entry reveal">
                         <div class="timeline-year">1962</div>
                         <div class="timeline-content">
                             <h3>The Club is Founded</h3>
@@ -49,7 +62,7 @@
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The founding members built the original ranges by hand, establishing the foundation of what would become a cornerstone of the local sporting community.</p>
                         </div>
                     </div>
-                    <div class="timeline-entry">
+                    <div class="timeline-entry reveal">
                         <div class="timeline-year">1998</div>
                         <div class="timeline-content">
                             <h3>Re-Established &amp; Revitalized</h3>
@@ -61,11 +74,39 @@
             </div>
         </section>
 
-        <section class="about-page-mission">
+        <section class="section section--alt">
             <div class="container">
-                <h2>Our Mission</h2>
-                <p class="about-page-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, providing a safe and welcoming environment for sportsmen and sportswomen of all experience levels.</p>
-                <div class="about-page-values">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Our Grounds</span>
+                    <h2>Gallery</h2>
+                    <div class="rule"></div>
+                </div>
+                <div class="gallery-grid reveal">
+                    <div class="gallery-item">
+                        <img src="Images/OutsidePistolRange.jpeg" alt="Outside Pistol Range">
+                        <span class="cap">Outside Pistol Range</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/PistolRangeBenches.jpeg" alt="Pistol Range Benches">
+                        <span class="cap">Pistol Range Benches</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/LongRangeTargets.jpeg" alt="Long Range Targets">
+                        <span class="cap">Long Range Targets</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">What We Stand For</span>
+                    <h2>Our Mission</h2>
+                    <div class="rule"></div>
+                </div>
+                <p class="about-lead reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, providing a safe and welcoming environment for sportsmen and sportswomen of all experience levels.</p>
+                <div class="values-grid reveal">
                     <div class="value-card">
                         <h3>Safety First</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
@@ -82,12 +123,14 @@
             </div>
         </section>
 
-        <section class="about-page-community">
+        <section class="section section--alt">
             <div class="container">
-                <h2>Join Our Community</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                <a href="members.html" class="about-page-cta">Become a Member</a>
+                <div class="cta-banner reveal">
+                    <h2 style="margin-bottom:1rem; font-size:1.8rem;">Join Our Community</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <a href="members.html" class="btn btn--primary">Become a Member</a>
+                </div>
             </div>
         </section>
     </main>
@@ -97,6 +140,10 @@
             <p>&copy; 2026 AJ Development. All rights reserved.</p>
         </div>
     </footer>
+
+    <button class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+    </button>
 
     <script src="script.js"></script>
 </body>

@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carleton Sportsmen's Club</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9a24b' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cline x1='12' y1='1' x2='12' y2='5'/%3E%3Cline x1='12' y1='19' x2='12' y2='23'/%3E%3Cline x1='1' y1='12' x2='5' y2='12'/%3E%3Cline x1='19' y1='12' x2='23' y2='12'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="container">
-                <h1><a href="index.html">Carleton Sportsmen's Club</a></h1>
+                <a class="brand" href="index.html">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="1" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="1" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="23" y2="12"/></svg>
+                    <span class="brand-text">Carleton Sportsmen's Club<small>Est. 1962 &middot; Carleton, MI</small></span>
+                </a>
                 <button class="hamburger" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
@@ -23,39 +30,51 @@
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="members.html">Members Area</a></li>
+                    <li><a href="members.html" class="btn btn--primary">Members Area</a></li>
                 </ul>
             </div>
         </nav>
+        <div class="nav-backdrop"></div>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <div class="container">
-                <div class="slideshow">
-                    <div class="slide active"><img src="Images/Slideshow/Trap.JPG" alt="Trap Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (1).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (2).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (3).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (4).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (5).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (6).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (7).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (8).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (9).jpeg" alt="Skeet Range"></div>
-                    <div class="slide"><img src="Images/Slideshow/Slideshow (10).jpeg" alt="Skeet Range"></div>
-
-                    <div class="slideshow-dots"></div>
+            <div class="slideshow">
+                <div class="slide active"><img src="Images/Slideshow/Trap.JPG" alt="Trap Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (1).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (2).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (3).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (4).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (5).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (6).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (7).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (8).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (9).jpeg" alt="Skeet Range"></div>
+                <div class="slide"><img src="Images/Slideshow/Slideshow (10).jpeg" alt="Skeet Range"></div>
+            </div>
+            <div class="hero-content">
+                <span class="eyebrow">Carleton, Michigan &middot; Established 1962</span>
+                <h1>Carleton Sportsmen's Club</h1>
+                <p>Serving our community for over six decades with safe, well-kept ranges for pistol, rifle, trap &amp; skeet.</p>
+                <div class="hero-actions">
+                    <a href="#ranges" class="btn btn--primary">Explore Our Ranges</a>
+                    <a href="#visit" class="btn btn--ghost">Visit Us</a>
                 </div>
             </div>
+            <div class="slideshow-dots"></div>
+            <div class="scroll-cue"><span class="line"></span>Scroll</div>
         </section>
 
-        <section id="visit" class="location">
+        <section id="visit" class="section">
             <div class="container">
-                <h2>Visit Us @ 14100 Sumpter Rd. Carleton, MI 48117</h2>
-                <div class="location-row">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Find Us</span>
+                    <h2>Visit Us</h2>
+                    <div class="rule"></div>
+                </div>
+                <div class="location-row reveal">
                     <div class="location-text">
-                        <img src="Images/Map.png" alt="Satellite view placeholder">
+                        <img src="Images/Map.png" alt="Satellite view of the club grounds">
                     </div>
                     <div class="location-map">
                         <iframe
@@ -69,161 +88,94 @@
                         </iframe>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="ranges" class="ranges">
-            <div class="container">
-                <h2>Ranges</h2>
-                <p class="range-subtitle">There is no shooting before 10am or after 9pm, Monday through Saturday, and no shooting before 10am or after 6pm on Sundays, to comply with local ordinances.</p>
-                <div class="range-item">
-                    <img src="Images/PistolRange.jpeg" alt="Pistol Range">
-                    <div class="range-text">
-                        <h3>Pistol Range</h3>
-                        <p>Our outdoor 25-yard pistol range is perfect for handguns or small-caliber rifles.</p>
-                        <ul class="hours-list">
-                            <li>Mon–Sat: 10am–9pm</li>
-                            <li>Sun: 10am–6pm</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="range-item flipped">
-                    <img src="Images/LongRangeBenches.jpeg" alt="Rifle Range">
-                    <div class="range-text">
-                        <h3>Rifle Range</h3>
-                        <p>Experience our 200-yard rifle range with multiple lanes for precision shooting and competitions.</p>
-                        <ul class="hours-list">
-                            <li>Mon–Sat: 10am–9pm</li>
-                            <li>Sun: 10am–6pm</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="range-item">
-                    <img src="Images/Skeet.JPG" alt="Trap & Skeet Range">
-                    <div class="range-text">
-                        <h3>Trap & Skeet Range</h3>
-                        <p>Join us at our clay target trap range for sporting clays and skeet shooting events.</p>
-                        <ul class="hours-list">
-                            <li>Tuesday: 10am–1pm</li>
-                            <li>Wednesday: 4:30pm–9pm</li>
-                            <li>Sunday: 10am–1pm</li>
-                        </ul>
-                    </div>
+                <div class="address-card reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-7.5-7-12a7 7 0 1 1 14 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    14100 Sumpter Rd. Carleton, MI 48117
                 </div>
             </div>
         </section>
 
-
-        <section id="contact" class="contact">
+        <section id="ranges" class="section section--alt">
             <div class="container">
-                <h2>Contact Us</h2>
-                <table class="contact-table">
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Name</th>
-                            <th>Phone Number</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>President</td>
-                            <td>Bret Gonyea</td>
-                            <td>734-558-7144</td>
-                        </tr>
-                        <tr>
-                            <td>Vice President</td>
-                            <td>Tim Kelley</td>
-                            <td>734-783-6464</td>
-                        </tr>
-                        <tr>
-                            <td>Secretary</td>
-                            <td>Kent Durham</td>
-                            <td>313-805-5026</td>
-                        </tr>
-                        <tr>
-                            <td>Treasurer</td>
-                            <td>Dewey Laginess</td>
-                            <td>734-699-9184</td>
-                        </tr>
-                        <tr>
-                            <td>Chief Range Officer</td>
-                            <td>Mike Mandernach</td>
-                            <td>313-806-3810</td>
-                        </tr>
-                        <tr>
-                            <td>Sergeant-at-Arms</td>
-                            <td>Craig Monroe</td>
-                            <td>734-231-7388</td>
-                        </tr>
-                        <tr>
-                            <td>Skeet Rep</td>
-                            <td>Bill Gibson</td>
-                            <td>734-301-5330</td>
-                        </tr>
-                        <tr>
-                            <td>Trap Rep</td>
-                            <td>Frank Clark</td>
-                            <td>734-216-1969</td>
-                        </tr>
-                        <tr>
-                            <td>Rifle Rep</td>
-                            <td>Bob Kocsis</td>
-                            <td>734-652-6934</td>
-                        </tr>
-                        <tr>
-                            <td>Black Powder</td>
-                            <td>Gary Breitner</td>
-                            <td>734-770-3797</td>
-                        </tr>
-                        <tr>
-                            <td>Archery</td>
-                            <td>Gary Ross</td>
-                            <td>734-915-2531</td>
-                        </tr>
-                        <tr>
-                            <td>Sporting Clays Rep</td>
-                            <td>Mark Crawford</td>
-                            <td>734-341-3668</td>
-                        </tr>
-                        <tr>
-                            <td>Pistol Rep</td>
-                            <td>Joe Tupacz</td>
-                            <td>734-740-9555</td>
-                        </tr>
-                        <tr>
-                            <td>Kitchen Manager</td>
-                            <td>Frank Stasa</td>
-                            <td>313-580-1572</td>
-                        </tr>
-                        <tr>
-                            <td>General Purchaser</td>
-                            <td>Frank Dudek</td>
-                            <td>734-654-2103</td>
-                        </tr>
-                        <tr>
-                            <td>Grounds Manager</td>
-                            <td>Mike Mata</td>
-                            <td>734-777-8354</td>
-                        </tr>
-                        <tr>
-                            <td>Facilities Manager</td>
-                            <td>Gerry McPhail</td>
-                            <td>734-735-3989</td>
-                        </tr>
-                        <tr>
-                            <td>Bar Manager</td>
-                            <td>Tracy Harvell</td>
-                            <td>734-755-3488</td>
-                        </tr>
-                        <tr>
-                            <td>Event Manager</td>
-                            <td>Jayson Perry</td>
-                            <td>734-770-2076</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>Follow us on <a href="https://www.facebook.com/CarletonSportsmensClub/" target="_blank">Facebook</a></p>
+                <div class="section-head reveal">
+                    <span class="eyebrow">Our Facilities</span>
+                    <h2>Ranges</h2>
+                    <div class="rule"></div>
+                </div>
+                <p class="range-subtitle reveal">There is no shooting before 10am or after 9pm, Monday through Saturday, and no shooting before 10am or after 6pm on Sundays, to comply with local ordinances.</p>
+                <div class="ranges-grid">
+                    <div class="range-card reveal">
+                        <div class="range-card-media"><img src="Images/PistolRange.jpeg" alt="Pistol Range"></div>
+                        <div class="range-card-body">
+                            <h3>Pistol Range</h3>
+                            <p>Our outdoor 25-yard pistol range is perfect for handguns or small-caliber rifles.</p>
+                            <ul class="hours-list">
+                                <li>Mon&ndash;Sat <strong>10am&ndash;9pm</strong></li>
+                                <li>Sun <strong>10am&ndash;6pm</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="range-card reveal">
+                        <div class="range-card-media"><img src="Images/LongRangeBenches.jpeg" alt="Rifle Range"></div>
+                        <div class="range-card-body">
+                            <h3>Rifle Range</h3>
+                            <p>Experience our 200-yard rifle range with multiple lanes for precision shooting and competitions.</p>
+                            <ul class="hours-list">
+                                <li>Mon&ndash;Sat <strong>10am&ndash;9pm</strong></li>
+                                <li>Sun <strong>10am&ndash;6pm</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="range-card reveal">
+                        <div class="range-card-media"><img src="Images/Skeet.JPG" alt="Trap & Skeet Range"></div>
+                        <div class="range-card-body">
+                            <h3>Trap &amp; Skeet Range</h3>
+                            <p>Join us at our clay target trap range for sporting clays and skeet shooting events.</p>
+                            <ul class="hours-list">
+                                <li>Tuesday <strong>10am&ndash;1pm</strong></li>
+                                <li>Wednesday <strong>4:30&ndash;9pm</strong></li>
+                                <li>Sunday <strong>10am&ndash;1pm</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Get In Touch</span>
+                    <h2>Contact Us</h2>
+                    <div class="rule"></div>
+                </div>
+                <div class="contact-grid reveal">
+                    <div class="contact-card"><div class="role">President</div><div class="name">Bret Gonyea</div><a class="phone" href="tel:7345587144">734-558-7144</a></div>
+                    <div class="contact-card"><div class="role">Vice President</div><div class="name">Tim Kelley</div><a class="phone" href="tel:7347836464">734-783-6464</a></div>
+                    <div class="contact-card"><div class="role">Secretary</div><div class="name">Kent Durham</div><a class="phone" href="tel:3138055026">313-805-5026</a></div>
+                    <div class="contact-card"><div class="role">Treasurer</div><div class="name">Dewey Laginess</div><a class="phone" href="tel:7346999184">734-699-9184</a></div>
+                    <div class="contact-card"><div class="role">Chief Range Officer</div><div class="name">Mike Mandernach</div><a class="phone" href="tel:3138063810">313-806-3810</a></div>
+                    <div class="contact-card"><div class="role">Sergeant-at-Arms</div><div class="name">Craig Monroe</div><a class="phone" href="tel:7342317388">734-231-7388</a></div>
+                    <div class="contact-card"><div class="role">Skeet Rep</div><div class="name">Bill Gibson</div><a class="phone" href="tel:7343015330">734-301-5330</a></div>
+                    <div class="contact-card"><div class="role">Trap Rep</div><div class="name">Frank Clark</div><a class="phone" href="tel:7342161969">734-216-1969</a></div>
+                    <div class="contact-card"><div class="role">Rifle Rep</div><div class="name">Bob Kocsis</div><a class="phone" href="tel:7346526934">734-652-6934</a></div>
+                    <div class="contact-card"><div class="role">Black Powder</div><div class="name">Gary Breitner</div><a class="phone" href="tel:7347703797">734-770-3797</a></div>
+                    <div class="contact-card"><div class="role">Archery</div><div class="name">Gary Ross</div><a class="phone" href="tel:7349152531">734-915-2531</a></div>
+                    <div class="contact-card"><div class="role">Sporting Clays Rep</div><div class="name">Mark Crawford</div><a class="phone" href="tel:7343413668">734-341-3668</a></div>
+                    <div class="contact-card"><div class="role">Pistol Rep</div><div class="name">Joe Tupacz</div><a class="phone" href="tel:7347409555">734-740-9555</a></div>
+                    <div class="contact-card"><div class="role">Kitchen Manager</div><div class="name">Frank Stasa</div><a class="phone" href="tel:3135801572">313-580-1572</a></div>
+                    <div class="contact-card"><div class="role">General Purchaser</div><div class="name">Frank Dudek</div><a class="phone" href="tel:7346542103">734-654-2103</a></div>
+                    <div class="contact-card"><div class="role">Grounds Manager</div><div class="name">Mike Mata</div><a class="phone" href="tel:7347778354">734-777-8354</a></div>
+                    <div class="contact-card"><div class="role">Facilities Manager</div><div class="name">Gerry McPhail</div><a class="phone" href="tel:7347353989">734-735-3989</a></div>
+                    <div class="contact-card"><div class="role">Bar Manager</div><div class="name">Tracy Harvell</div><a class="phone" href="tel:7347553488">734-755-3488</a></div>
+                    <div class="contact-card"><div class="role">Event Manager</div><div class="name">Jayson Perry</div><a class="phone" href="tel:7347702076">734-770-2076</a></div>
+                </div>
+                <div class="social-row reveal">
+                    <a class="social-link" href="https://www.facebook.com/CarletonSportsmensClub/" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+                        Follow us on Facebook
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -233,6 +185,10 @@
             <p>&copy; 2026 AJ Development. All rights reserved.</p>
         </div>
     </footer>
+
+    <button class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+    </button>
 
     <script src="script.js"></script>
 </body>
