@@ -1085,6 +1085,18 @@ footer {
   font-style: italic;
 }
 
+.login-error {
+  margin-top: 0.2rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--crimson-bright);
+  border-radius: var(--radius-sm);
+  background: rgba(200, 40, 40, 0.12);
+  color: var(--crimson-bright);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 .calendar-card {
   background: var(--ink-elev);
   border: 1px solid var(--line);

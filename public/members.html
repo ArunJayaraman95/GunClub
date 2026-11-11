@@ -46,22 +46,38 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="member-login-section">
             <div class="container">
-                <div class="members-layout">
-                    <div class="login-card reveal">
-                        <h2>Members Login</h2>
-                        <p>Access exclusive member content by logging in.</p>
-                        <form>
-                            <label for="username">Username</label>
-                            <input type="text" id="username" name="username" placeholder="Enter username">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Enter password">
-                            <button type="submit">Login</button>
-                        </form>
-                        <p class="login-note">Note: This is a prototype. Authentication not implemented yet.</p>
-                    </div>
+                <div class="login-card reveal">
+                    <h2>Members Login</h2>
+                    <p>Enter your last name and the shared member password.</p>
+                    <form id="member-login">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="lastName" placeholder="Enter last name" required autocomplete="family-name">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required autocomplete="current-password">
+                        <button type="submit">Login</button>
+                        <p class="login-error" id="login-error" role="alert" hidden></p>
+                    </form>
+                </div>
+            </div>
+        </section>
 
+        <div id="member-content" hidden>
+            <section class="section">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">Members Only</span>
+                        <h2>Member Events</h2>
+                        <div class="rule"></div>
+                    </div>
+                    <div class="events-list" id="member-events"></div>
+                    <button type="button" id="logout" class="btn btn--primary">Log out</button>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
                     <div class="calendar-card reveal">
                         <h2>Member Calendar</h2>
                         <iframe
@@ -72,41 +88,41 @@
                         </iframe>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section section--alt">
-            <div class="container">
-                <div class="section-head reveal">
-                    <span class="eyebrow">Stay In The Loop</span>
-                    <h2>Member Information</h2>
-                    <div class="rule"></div>
+            <section class="section section--alt">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">Stay In The Loop</span>
+                        <h2>Member Information</h2>
+                        <div class="rule"></div>
+                    </div>
+                    <div class="info-grid reveal">
+                        <div class="info-item">
+                            <img src="https://placehold.co/600x400?text=Dinner+Event" alt="Dinner Event">
+                            <div class="info-item-body">
+                                <h3>Upcoming Dinners</h3>
+                                <p>Join us for our monthly member dinners. Next one: June 15th at 7 PM.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="https://placehold.co/600x400?text=Exclusive+Event" alt="Exclusive Event">
+                            <div class="info-item-body">
+                                <h3>Exclusive Events</h3>
+                                <p>Members-only shooting competitions and workshops.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="https://placehold.co/600x400?text=Member+Benefits" alt="Member Benefits">
+                            <div class="info-item-body">
+                                <h3>Member Benefits</h3>
+                                <p>Discounted range fees, priority booking, and more.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-grid reveal">
-                    <div class="info-item">
-                        <img src="https://placehold.co/600x400?text=Dinner+Event" alt="Dinner Event">
-                        <div class="info-item-body">
-                            <h3>Upcoming Dinners</h3>
-                            <p>Join us for our monthly member dinners. Next one: June 15th at 7 PM.</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <img src="https://placehold.co/600x400?text=Exclusive+Event" alt="Exclusive Event">
-                        <div class="info-item-body">
-                            <h3>Exclusive Events</h3>
-                            <p>Members-only shooting competitions and workshops.</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <img src="https://placehold.co/600x400?text=Member+Benefits" alt="Member Benefits">
-                        <div class="info-item-body">
-                            <h3>Member Benefits</h3>
-                            <p>Discounted range fees, priority booking, and more.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -120,5 +136,6 @@
     </button>
 
     <script src="script.js"></script>
+    <script type="module" src="members.js"></script>
 </body>
 </html>
