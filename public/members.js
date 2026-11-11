@@ -36,11 +36,6 @@ const loginError = document.getElementById("login-error");
 const memberContent = document.getElementById("member-content");
 const eventsList = document.getElementById("member-events");
 const logoutButton = document.getElementById("logout");
-const welcomeMessage = document.getElementById("welcome-message");
-
-function capitalize(name) {
-  return name.replace(/(^|[ -])([a-z])/g, (_, sep, letter) => sep + letter.toUpperCase());
-}
 
 async function login(lastName, password) {
   await setPersistence(auth, browserSessionPersistence);
@@ -52,7 +47,6 @@ async function login(lastName, password) {
     await signOut(auth);
     throw new Error("Last name not found");
   }
-  return match.docs[0].data();
 }
 
 async function loadEvents() {
@@ -87,9 +81,8 @@ loginForm.addEventListener("submit", async (event) => {
   const lastName = document.getElementById("last-name").value.trim();
   const password = document.getElementById("password").value;
 
-  let member;
   try {
-    member = await login(lastName, password);
+    await login(lastName, password);
   } catch (err) {
     loginError.textContent = "⚠️ Last name or password is incorrect.";
     loginError.hidden = false;
@@ -98,7 +91,6 @@ loginForm.addEventListener("submit", async (event) => {
 
   loginForm.reset();
   loginSection.hidden = true;
-  welcomeMessage.textContent = `Welcome ${capitalize(member.firstName)} ${capitalize(member.lastName)}`;
   memberContent.hidden = false;
   try {
     await loadEvents();
